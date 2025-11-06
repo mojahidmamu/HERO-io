@@ -1,6 +1,26 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
 
 const Navbar = () => {
+  const navLinks = (
+    <>
+      <Link to="/">
+        <li>
+          <a>Home</a>
+        </li>
+      </Link>
+      <Link to="/">
+        <li>
+          <a>Apps</a>
+        </li>
+      </Link>
+      <Link to="/">
+        <li>
+          <a>Installation</a>
+        </li>
+      </Link>
+    </>
+  );
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -12,7 +32,7 @@ const Navbar = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-            > 
+            >
               {" "}
               <path
                 strokeLinecap="round"
@@ -26,15 +46,7 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Home</a>{" "}
-            </li>
-            <li>
-              <a>Apps</a>{" "}
-            </li>
-            <li>
-              <a>Installation</a>
-            </li>
+            {navLinks}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
@@ -48,15 +60,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Home</a>{" "}
-          </li>
-          <li>
-            <a>Apps</a>{" "}
-          </li>
-          <li>
-            <a>Installation</a>{" "}
-          </li>
+          {navLinks}
         </ul>
       </div>
       <div className="navbar-end">

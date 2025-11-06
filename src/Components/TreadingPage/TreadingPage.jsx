@@ -219,7 +219,7 @@ const TreadingPage = () => {
 
     {/* Last button  */}
       <div className="flex mt-5 justify-center ">
-        <button className="btn btn-dash btn-primary">Primary</button>
+        <button className="btn btn-dash btn-primary">Show More </button>
       </div>
     </div>
   );
