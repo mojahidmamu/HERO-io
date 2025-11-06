@@ -1,6 +1,21 @@
-import logo from "../../assets/image/logo.png";
+import logo from "../../assets/image/logo.png"; 
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const navLinks = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/Apps">Apps</Link>
+      </li>
+      <li>
+        <Link to="/Installation">Installation</Link>
+      </li>
+    </>
+  );
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -26,15 +41,7 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Home</a>{" "}
-            </li>
-            <li>
-              <a>Apps</a>{" "}
-            </li>
-            <li>
-              <a>Installation</a>
-            </li>
+            {navLinks}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
@@ -47,17 +54,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Home</a>{" "}
-          </li>
-          <li>
-            <a>Apps</a>{" "}
-          </li>
-          <li>
-            <a>Installation</a>{" "}
-          </li>
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn text-white" style={{ backgroundColor: "#632EE3" }}>

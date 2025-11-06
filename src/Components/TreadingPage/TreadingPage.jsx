@@ -6,6 +6,7 @@ import Image4 from "../../assets/image/demo-app (3).webp";
 import Image5 from "../../assets/image/demo-app (4).webp";
 import Image6 from "../../assets/image/demo-app (5).webp";
 import Image7 from "../../assets/image/demo-app (6).webp";
+import { Link } from "react-router-dom";
 const TreadingPage = () => {
   return (
     <div>
@@ -219,7 +220,9 @@ const TreadingPage = () => {
 
     {/* Last button  */}
       <div className="flex mt-5 justify-center ">
+       <Link to="/Apps">
         <button className="btn btn-dash btn-primary">Show More </button>
+       </Link>
       </div>
     </div>
   );
