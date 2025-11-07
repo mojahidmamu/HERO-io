@@ -31,6 +31,11 @@ const router = createBrowserRouter([
         path: "/apps",
         element: <Apps></Apps>,
         // loader: () => fetch("/service.json"),
+        // children: [
+        //   {
+        //     path: "/apps/"
+        //   }
+        // ],
       },
       {
         path: "/installation",
@@ -60,7 +65,6 @@ const router = createBrowserRouter([
       //   path: "/appointmentModal",
       //   element:  <AppointmentModal></AppointmentModal>
       // },
-
       //   {
       //     path: "/details/:id",
       //     element: <Details></Details>,
