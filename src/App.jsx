@@ -3,9 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div>
-        <h2>slkjdflaskj</h2>
-      </div>
+      <h1>Firebase Conceptual-01</h1>
     </>
   );
 }

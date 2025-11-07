@@ -1,23 +1,28 @@
-import logo from "../../assets/image/logo.png"; 
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
+import logo from "../../assets/image/logo.png";
 
 const Navbar = () => {
-  const navLinks = (
+  const links = (
     <>
+      {/* <NavLink to='/'>Home</NavLink> */}
       <li>
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/Apps">Apps</Link>
+        <Link to="/apps">Apps</Link>
       </li>
       <li>
-        <Link to="/Installation">Installation</Link>
+        <Link to="/installation">Installation</Link>
+      </li>
+      <li>
+        <Link to="/profile">Profile</Link>
       </li>
     </>
   );
-
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,10 +43,10 @@ const Navbar = () => {
             </svg>
           </div>
           <ul
-            tabIndex="-1"
+            tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            {navLinks}
+            {links}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
@@ -54,12 +59,20 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn text-white" style={{ backgroundColor: "#632EE3" }}>
-          Contribute
-        </a>
+        <div className="navbar-end">
+          <a
+            className="btn text-white mr-3"
+            style={{ backgroundColor: "#632EE3" }}
+          >
+            Contribute
+          </a>
+        </div>
+        <Link to="/login">
+          <a className="btn btn-outline">Login</a>
+        </Link>
       </div>
     </div>
   );
