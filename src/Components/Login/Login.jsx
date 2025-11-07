@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom"; 
 
 const Login = () => {
-  const { handleGoogleLogin, handeLogin } = useContext(authContext);
+  // const { handleGoogleLogin, handeLogin } = useContext(authContext);
   // console.log(contextValue);
 
   const handleLoginButtn = (e) => {
@@ -24,7 +24,7 @@ const Login = () => {
       confirmPassword
     );
 
-    handeLogin(email, password);
+    // handeLogin(email, password);
   };
 
   return (

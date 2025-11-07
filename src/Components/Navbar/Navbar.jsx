@@ -67,7 +67,9 @@ const Navbar = () => {
             className="btn text-white mr-3"
             style={{ backgroundColor: "#632EE3" }}
           >
+          <Link to="/contribute">
             Contribute
+          </Link>
           </a>
         </div>
         <Link to="/login">

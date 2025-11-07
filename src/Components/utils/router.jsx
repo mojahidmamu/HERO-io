@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Apps from "../../components/Apps/Apps";
 import Installation from "../Installation/Installation";
+import Contribute from "../Contribute/Contribute";
 // import Details from "../Details/Details";
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path: "/contribute",
+        element: <Contribute></Contribute>
+      }
       // {
       //   path: "/details",
       //   element: <CheckOut></CheckOut>,
