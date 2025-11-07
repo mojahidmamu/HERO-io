@@ -18,6 +18,14 @@ const Apps = () => {
       </p>
       {/*  */}
       <section>
+        <div className="flex justify-between px-6 items-center">
+          <h2 className="text-2xl mt-4 text-center font-bold">
+            (20) Apps Found
+          </h2>
+          <fieldset className="fieldset">
+            <input type="email" className="input" placeholder="Search" />
+          </fieldset>
+        </div>
         {/* All apps */}
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-center items-center mt-6 mx-8">
           {/* First apps */}
@@ -420,7 +428,7 @@ const Apps = () => {
               </div>
             </div>
           </div>
-           {/* Seventeenth apps */}
+          {/* Seventeenth apps */}
           <div className="border p-4 rounded-sm shadow-md w-72 mt-6">
             <img className="w-60 h-50 rounded-xl mb-3" src={Image4} alt="" />
             <p className="font-bold">FLIP - Focus Timer for Study</p>
@@ -470,7 +478,7 @@ const Apps = () => {
               </div>
             </div>
           </div>
-          {/* Thirteenth apps */}
+          {/* Nineteenth apps */}
           <div className="border p-4 rounded-sm shadow-md w-72 mt-6">
             <img className="w-60 h-50 rounded-xl mb-3" src={Image6} alt="" />
             <p className="font-bold">Time Planner: Schedule & Tasks</p>
@@ -495,7 +503,7 @@ const Apps = () => {
               </div>
             </div>
           </div>
-          {/* Fourteenth apps */}
+          {/* Twentieth apps */}
           <div className="border p-4 rounded-sm shadow-md w-72 mt-6">
             <img className="w-60 h-50 rounded-xl mb-3" src={Image7} alt="" />
             <p className="font-bold">Morning Habits - Daily Routine</p>
