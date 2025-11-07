@@ -1,22 +1,52 @@
-import React from 'react';
-import pfofileImg from '../../assets/profile.bmp'
+import React from "react";
+import pfofileImg from "../../assets/profile.bmp";
 
 const Profile = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-10">
-      <h1 className="text-4xl font-bold mb-6">My Profile</h1>
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
-        <img 
-          src={pfofileImg}
-          alt="Profile Picture" 
-          className="w-32 h-32 rounded-lg  mx-auto mb-4"
-        />
-        <h2 className="text-2xl font-semibold text-center mb-2">Abdullah Al Mojahid</h2>
-        <p className="text-gray-600 text-center mb-4">Full Stack Web Developer | React Enthusiast</p>
-        <p className="text-gray-700 mb-2"><strong>Email:</strong> abdullahallmojahidstudent@example.com</p>
-        <p className="text-gray-700 mb-2"><strong>Location:</strong> Chittagong , Bangladesh</p>
-        <p className="text-gray-700 mb-2"><strong>Skills:</strong> HTML, CSS, JavaScript, React, Tailwind CSS, Firebase, MongoDB, Git, Github etc...</p>
-        <p className="text-gray-700"><strong>About Me:</strong> Passionate about creating user-friendly web applications and learning new technologies.</p>
+    <div className="max-w-md mx-auto bg-white shadow-xl rounded-2xl p-6 text-center border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+      {/* Profile Image */}
+      <img
+        src={pfofileImg}
+        alt="Profile"
+        className="w-28 h-28 mx-auto rounded-xl object-cover mb-4 border-2 border-gray-300"
+      />
+
+      {/* Name and Title */}
+      <h2 className="text-2xl font-bold text-gray-800">Abdullah Al Mojahid</h2>
+      <p className="text-gray-600 mt-1">
+        Full Stack Web Developer | Problem Solver | DSA Enthusiast | Tech Lover | MERN Stack
+      </p>
+
+      {/* Info Section */}
+      <div className="text-left mt-5 space-y-2 text-gray-700">
+        <p>
+          <span className="font-semibold">Email:</span>{" "}
+          abdullahallmojahidstudent@gmail.com
+        </p>
+        <p>
+          <span className="font-semibold">Location:</span> Cox's Bazar,
+          Bangladesh
+        </p>
+        <p>
+          <span className="font-semibold">Skills:</span> HTML, CSS, JavaScript,
+          React, Tailwind CSS, Firebase, MongoDB, Git, GitHub, etc.
+        </p>
+        <p>
+          <span className="font-semibold">Problem Solving:</span> Active on
+          platforms like Codeforces, LeetCode, and HackerRank — solving
+          algorithmic problems regularly to improve logic and analytical skills.
+        </p>
+        <p>
+          <span className="font-semibold">DSA:</span> Strong understanding of
+          Data Structures and Algorithms using C++ and Python, focusing on clean
+          logic and optimized solutions.
+        </p>
+        <p>
+          <span className="font-semibold">About Me:</span> Passionate about
+          building user-friendly web applications and exploring new
+          technologies. Constantly improving full-stack and problem-solving
+          skills to become a versatile software engineer.
+        </p>
       </div>
     </div>
   );
