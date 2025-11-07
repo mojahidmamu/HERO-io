@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../../Components/MainLayout/MainLayout.jsx";
-import Apps from "../../Components/Apps/Apps.jsx";
-import Installation from "../../Components/Installation/Installation.jsx";
-import Hero from "../../Components/Hero/Hero.jsx";
+import MainLayout from "../MainLayout/MainLayout";
+import Hero from "../Hero/Hero";
+import Apps from "../Apps/Apps";
+import TreadingPage from "../TreadingPage/TreadingPage";
 
 const router = createBrowserRouter([
   {
@@ -10,17 +10,17 @@ const router = createBrowserRouter([
     element: <MainLayout></MainLayout>,
     children: [
       {
-        path: "/",
+         path: "/",
         element: <Hero></Hero>,
       },
       {
         path: "/Apps",
-        element: <Apps></Apps>,
+        element: <Apps></Apps>
       },
       {
         path: "/Installation",
-        element: <Installation></Installation>,
-      },
+        element: <TreadingPage></TreadingPage>
+      }
     ],
   },
 ]);
