@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Apps = () => {
-    return (
-        <div>
-            <h1>Apps</h1>
-            <p>Welcome to the Apps page. Here you can find various applications available for download.</p>
-        </div>
-    );
+  return (
+    <div>
+      <h1 className="text-5xl font-bold">Our All Applications</h1>
+      <p>
+        Welcome to the Apps page. Here you can find various applications
+        available for download.
+      </p>
+    </div>
+  );
 };
 
 export default Apps;
