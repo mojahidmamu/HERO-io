@@ -68,7 +68,7 @@ const Navbar = () => {
             style={{ backgroundColor: "#632EE3" }}
           >
           <Link to="/contribute">
-            Contribute
+            Contribute sdf 
           </Link>
           </a>
         </div>
